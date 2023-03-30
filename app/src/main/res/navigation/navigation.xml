@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/tampung_Data2">
+    <fragment
+        android:id="@+id/tampung_Data2"
+        android:name="com.example.challengechapter3_dianpurnamasari.Tampung_Data"
+        android:label="fragment_tampung__data"
+        tools:layout="@layout/fragment_tampung__data" >
+        <action
+            android:id="@+id/action_tampung_Data2_to_abjad"
+            app:destination="@id/abjad" />
+        <argument
+            android:name="data"
+            app:argType="string[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/abjad"
+        android:name="com.example.challengechapter3_dianpurnamasari.Abjad"
+        android:label="fragment_abjad"
+        tools:layout="@layout/fragment_abjad" >
+        <argument
+            android:name="data"
+            app:argType="string[]" />
+    </fragment>
+</navigation>
